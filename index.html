@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cake Birthday Just For Niko</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="birthday-confetti"></div>
+    <div class="pink-dots"></div>
+    <div class="container">
+      <div class="cake-container">
+        <h1 class="title">
+          🎉 HAPPY BIRTHDAY 🎉 <br> <span class="name">Niko🥹</span>! 🎉
+        </h1>
+        <p class="instruction">
+          Make a wish and blow the candle 🎂 (use your voice!)
+        </p>
+        <div class="cake">
+          <div class="layer layer-bottom"></div>
+          <div class="layer layer-middle"></div>
+          <div class="layer layer-top"></div>
+          <div class="icing"></div>
+          <div class="candle-container">
+              <div class="flame" id="flame"></div>
+               <div class="stick"></div>
+              <div class="fire-particles" id="fireParticles"></div>
+              <div class="smoke-puff" id="smokePuff"></div>
+            </div>
+          </div>
+        </div>
+        <div class="message" id="wishMessage" class="hidden">
+          Selamat bertambah usia dan sehat selalu ya sayang!
+        </div>
+        <div class="mic-status" id="micStatus"></div>
+        
+        <!-- Tombol untuk membuka surat cinta (akan muncul setelah lilin padam) -->
+        <button id="loveLetterBtn" class="love-letter-btn hidden">💌 Baca Surat Cintaku</button>
+      </div>
+    </div>
+    
+    <!-- Modal untuk surat cinta -->
+    <div id="loveLetterModal" class="modal hidden">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Untuk Sayangku, Zahra</h2>
+        <div class="letter-content">
+       <p>Hiii sayang👋🏻 Selamat bersyukur di hari spesial kamu yaa💐 Aku mau ngucapin selamat ulang tahun sayangkuu eeaaaa🎂🤍</p>
+
+<p>Nih yaa walopun kita bertemu secara virtual doang, tapi aku ngerasa cocok sama kamuu🥲 dan dengan kesadaran penuh waktu kamu bilang nanti balik indo 3 tahun lagi gatau kenapa aku mau nungguin kamuu. Aku juga gatau kedepannya bakalan gimana, selalu bawa dalam doa ajaa🫶🏻</p>
+
+<p>Semoga kamu sehat-sehat selalu dimana pun kamu pergi dan berada, semoga kamu panjang umur, diberkati Tuhan pribadi kamu dan keluarga kamu, semoga juga bertumbuh jauh lebih baik dari sebelumnya yaa sayang. Semoga diberkati masa depan muu jadi orang sukses sayang, semoga jadi orang berhasil yang bahagian keluarga kamu dan diri kamu sendiri yaa. Pokoknya apapun yang kamu doakan semoga terwujudkan, apapun yang kamu minta semoga kamu terima, apapun yang kamu cari semoga kamu temukan, apapun yang kamu inginkan semoga terkabul kan perlahan-lahan sesuai waktuNya Tuhan ya sayang.</p>
+
+<p>Bahkan kalo segala sesuatu nya tidak berjalan sesuai planning mu, semoga kamu selalu terus berusaha mencoba dan pantang menyerah yaa sayang. Jangan menyerah pada dirimu sendiri ya sayang apalagi kalo kamu lagi di hari-hari terberatmu, semoga kamu selalu punya motivasi yang baik dan selalu ingetin diri kamu ginii nii "aku pantas dapat yang lebih baik, aku pantas dirayakan, aku pantas dicintai, aku pantas diterima dalam hal apapun".</p>
+
+<p>Semoga semesta selalu memberi rahmat atas segala usahamu, semoga doa-doa mu perlahan-lahan terkabul satu per satu, semoga langkah kakimu selalu diringankan, semoga segala urusanmu dipermudah Tuhan, semoga hatimu dilapangkan atas semua yang nanti terjadi diluar rencanamu, dan semoga kamu selalu dikelilingi dan melibatkan orang-orang baik dimana pun kamu berada sayanggg. Oiya jangan lupa selalu andalkan Tuhan sayang, selalu melibatkan Tuhan dan aku juga ya hehehe, selalu takut akan Tuhan yaa! Aminnn</p>
+
+<p>Semangat menikmati prosesmuu, step by step yaa semoga selalu dilancarkan aminnn! Loveyouuu🤏🏻 Semoga kita langgeng langgeng yaa hihiihi, 3 tahun mah bentaran doangg</p>
+
+<p>Ntar pas kamu balik indo semoga aku masih menjadi perempuan yang kamu sukai, sayangi, nantikan dan cintai itu yaa🫂💗 Tuhan Yesus memberkati kamu dan keluarga❤️‍🩹</p>
+
+        </div>
+      </div>
+    </div>
+    
+    <audio id="birthdaySong" src="happybirthday.mp3" preload="auto"></audio>
+
+    <script src="script.js"></script>
+  </body>
+</html>
